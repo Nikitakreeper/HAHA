@@ -1,0 +1,644 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  background: url(../img/bgc.png) no-repeat;
+  background-size: cover;
+}
+
+.top_block {
+  background: url(../img/main-screen__bgc.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.top_block header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  box-sizing: border-box;
+}
+.top_block header .links {
+  display: flex;
+  gap: 56px;
+}
+.top_block header .links .link {
+  text-decoration: none;
+}
+.top_block header .btn_login {
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.top_block .timer {
+  width: 100%;
+  padding-left: 250px;
+  box-sizing: border-box;
+}
+.top_block .timer .timer_con {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.top_block .timer .timer_con .title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
+}
+.top_block .timer .timer_con .chisla {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.top_block .timer .timer_con .chisla .box {
+  width: 110px;
+  height: 110px;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top_block .timer .timer_con .chisla .box .chislo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+}
+.top_block .timer .timer_con .chisla .box .text {
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.top_block .top_footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #121212;
+  justify-content: center;
+}
+.top_block .top_footer .top_footer_con {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0px;
+}
+.top_block .top_footer .top_footer_con .zakaz {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.top_block .top_footer .top_footer_con .center_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.top_block .top_footer .top_footer_con .center_block .top_center_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+}
+.top_block .top_footer .top_footer_con .center_block .top_center_block .left {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+.top_block .top_footer .top_footer_con .center_block .top_center_block .right {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.top_block .top_footer .top_footer_con .procent_block {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+}
+.top_block .top_footer .top_footer_con .procent_block .top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.top_block .top_footer .top_footer_con .procent_block .top .left {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+.top_block .top_footer .top_footer_con .procent_block .top .right {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.top_block .top_footer .top_footer_con .procent_block .center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.top_block .top_footer .top_footer_con .procent_block .center .left {
+  width: 40%;
+  height: 6px;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.top_block .top_footer .top_footer_con .procent_block .center .right {
+  width: 60%;
+  height: 6px;
+  background: #fff;
+}
+.top_block .top_footer .top_footer_con .procent_block .bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.top_block .top_footer .top_footer_con .procent_block .bot p {
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.4;
+}
+
+.second_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  width: 100%;
+}
+.second_block .second_block_con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  gap: 139px;
+  width: 70%;
+}
+.second_block .second_block_con .text {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.fourth_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 231px;
+}
+.fourth_block .fourth_block_con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+}
+.fourth_block .fourth_block_con .start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  gap: 49px;
+}
+.fourth_block .fourth_block_con .start .logo {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+.fourth_block .fourth_block_con .start .logo .text h1 {
+  font-size: 48px;
+}
+.fourth_block .fourth_block_con .start .godTEXT p {
+  opacity: 0.5;
+}
+.fourth_block .fourth_block_con .start .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth_block .pizdec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fourth_block .pizdec .lol {
+  display: flex;
+  flex-direction: column;
+}
+.fourth_block .pizdec .lol h1 {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.fourth_block .pizdec .lol p {
+  display: flex;
+  font-size: 14px;
+  padding-top: 35px;
+  margin-right: 18px;
+  opacity: 0.5;
+}
+.fourth_block .pizdec .lol .img_block {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.fourth_block .pizdec .lol .img_block img {
+  width: 100%;
+}
+.fourth_block .pizdec .lol .img_block .img1 {
+  height: 60px;
+}
+.fourth_block .pizdec .lol .img_block .img2 {
+  height: 30px;
+}
+.fourth_block .pizdec .lol .img_block .img3 {
+  height: 10px;
+}
+
+.five_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+.five_block .five_block_con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.five_block .five_block_con .zagolovok {
+  display: flex;
+  padding-bottom: 120px;
+  font-size: 25px;
+}
+.five_block .five_block_con .gen {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 82px;
+}
+.five_block .five_block_con .pc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.five_block .five_block_con .pc h1 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+.five_block .five_block_con .pc p {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.six_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 231px;
+}
+.six_block .six_block_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  gap: 117px;
+}
+.six_block .six_block_con .logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.six_block .six_block_con .logo h1 {
+  padding-left: 52px;
+  font-size: 48px;
+}
+.six_block .six_block_con .msi {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1327px;
+}
+.six_block .six_block_con .msi img {
+  display: flex;
+  padding: 30px 66px;
+  border-right: 1px solid rgb(151, 151, 151);
+  border-bottom: 1px solid rgb(151, 151, 151);
+}
+.six_block .six_block_con .msi img:nth-child(4) {
+  border-right: none;
+}
+.six_block .six_block_con .msi img:nth-child(8) {
+  border-right: none;
+}
+.six_block .six_block_con .msi img:nth-child(8) {
+  border-bottom: none;
+}
+.six_block .six_block_con .msi img:nth-child(7) {
+  border-bottom: none;
+}
+.six_block .six_block_con .msi img:nth-child(6) {
+  border-bottom: none;
+}
+.six_block .six_block_con .msi img:nth-child(5) {
+  border-bottom: none;
+}
+
+.seven_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 243px;
+  width: 100%;
+}
+.seven_block .seven_block_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.seven_block .seven_block_con .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.seven_block .seven_block_con .logo .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 76px;
+}
+.seven_block .seven_block_con .logo .text h1 {
+  font-size: 48px;
+}
+.seven_block .seven_block_con .logo .text p {
+  display: flex;
+  padding-top: 30px;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 16px;
+}
+.seven_block .seven_block_con .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 80px;
+}
+.seven_block .seven_block_con .border .lol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 87px;
+}
+.seven_block .seven_block_con .border .lol .chel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.seven_block .seven_block_con .border .lol .chel .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+}
+.seven_block .seven_block_con .border .lol .chel .text h1 {
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: normal;
+  text-align: right;
+  padding-bottom: 15px;
+  width: 100%;
+}
+.seven_block .seven_block_con .border .lol .chel .text p {
+  font-size: 18px;
+}
+.seven_block .seven_block_con .border .lol .chel .left {
+  background: white;
+  width: 40px;
+  height: 1px;
+  opacity: 0.5;
+}
+.seven_block .seven_block_con .border .perpl {
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  width: 6px;
+  height: 677px;
+}
+.seven_block .seven_block_con .border .kek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 87px;
+}
+.seven_block .seven_block_con .border .kek .man {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.seven_block .seven_block_con .border .kek .man .text {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+.seven_block .seven_block_con .border .kek .man .text h1 {
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+.seven_block .seven_block_con .border .kek .man .text p {
+  font-size: 18px;
+}
+.seven_block .seven_block_con .border .kek .right {
+  background: white;
+  width: 40px;
+  height: 1px;
+  opacity: 0.5;
+}
+
+.eight_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 231px;
+}
+.eight_block .eight_block_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eight_block .eight_block_con .logo {
+  display: flex;
+  justify-content: cebter;
+  align-items: center;
+  flex-direction: row;
+  gap: 39px;
+  width: 100%;
+}
+.eight_block .eight_block_con .logo h1 {
+  font-size: 48px;
+}
+.eight_block .eight_block_con .prepodi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  gap: 250px;
+  padding-top: 113px;
+}
+.eight_block .eight_block_con .prepodi .dimas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eight_block .eight_block_con .prepodi .dimas .text {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.eight_block .eight_block_con .prepodi .dimas .text h1 {
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+.eight_block .eight_block_con .prepodi .dimas .text p {
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  white-space: nowrap;
+}
+.eight_block .eight_block_con .prepodi .dimas .cnopka {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.nine_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nine_block .nine_block_con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  gap: 60px;
+}
+.nine_block .nine_block_con .text {
+  text-align: center;
+}
+.nine_block .nine_block_con .text h1 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+.nine_block .nine_block_con .text p {
+  opacity: 0.5;
+}
+.nine_block .nine_block_con .sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nine_block .nine_block_con .sub .email input {
+  background: hsla(0, 0%, 100%, 0.253);
+  width: 353px;
+  height: 44px;
+  border-radius: 50px 0px 0px 50px;
+  border: 0;
+  outline: none;
+  color: white;
+  font-weight: bolder;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.nine_block .nine_block_con .sub .subca button {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  width: 160px;
+  height: 44px;
+  border-radius: 0px 50px 50px 0px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.nine_block .nine_block_con .sety {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.nine_block .nine_block_con .sety .grad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
